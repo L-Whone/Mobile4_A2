@@ -40,3 +40,24 @@ There is a video in the repo titled:
 
 that shows the project working
 
+
+
+**What I Did:**
+
+* Swipe.cs 
+
+  * A script I made for the previous Mobile assignment. It takes swipe input from the player and returns the Angle and Magnitude of the swipe
+  * It also recalculates the angle and magnitude if the player stops moving their finger
+* MonsterObbject.cs
+
+  * A simple script that destroys itself when capturesd
+* CaptureBall.cs 
+
+  * The bulk of the calculations, keeps the ball positioned at the bottom of the screen until thrown.
+  * When a swipe input is received, gates the throw if the magnitude is too low, or angle is not upwards/within a threshold
+  * When colliding with a MonsterObject, captures the monster and destroys itself
+* ARController.cs
+
+  * A simple controller that can spawn Monsters and Capture Balls
+  * Handles pointer from camera
+
